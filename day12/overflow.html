@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            padding: 10px;
+            gap: 30px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .flow-contents {
+            height: auto;
+        }
+
+        .hidden-contents {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h4>콘텐츠 양이 일정</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nihil dolores atque quos cum odio dolor laudantium consequatur cupiditate animi ab libero alias hic labore illo ratione voluptate, quas eligendi!</p>
+        </div>
+
+        <div class="box">
+            <h4>콘텐츠의 양이 많거나 유동적일 때 흘러넘침</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, et? Nostrum, veniam est recusandae quaerat deserunt labore, numquam sunt perferendis nesciunt repudiandae perspiciatis eveniet, velit expedita aspernatur vitae deleniti doloribus?</p>
+        </div>
+
+        <div class="box flow-contents">
+            <h4>콘텐츠의 양에 따라서 높이가 늘어남</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aspernatur iusto nihil dolorem provident laudantium in sed, illo eius? Quis, fuga cumque obcaecati odit illo soluta eum! Consequatur, possimus error?</p>
+        </div>
+
+        <div class="box hidden-contents">
+            <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum nulla omnis quaerat aspernatur fuga reiciendis animi excepturi minus! Velit distinctio iusto quis fugit suscipit molestias officia expedita delectus quae.</p>
+        </div>
+    </div>
+</body>
+</html>
